@@ -1,0 +1,258 @@
+/* Basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Garamond;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+}
+
+/* Header styling */
+header {
+    background-color: #0c1635;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+/* Menu styling */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFC107;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #003366;
+    color: #FFC107;
+}
+
+.menu a.active {
+    background-color: #FFC107;
+    color: #1E3A8A;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+}
+
+/* Update text color for sections */
+p {
+    font-size: 17px;
+}
+h1, h2 {
+    color: #FFC107;
+    font-size: 32px;
+}
+h4 {
+    font-size: 17px;
+    font-weight: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+
+
+/* About section styling */
+#about {
+    color: #FFFFFF; 
+}
+
+/* Text and photo container */
+.text-photo-container.left.with-header .text-content {
+    color: #FFFFFF; 
+}
+
+.text-photo-container p {
+    color: #FFFFFF; 
+}
+
+.text-photo-container.left.with-header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.text-photo-container.left.with-header .text-content {
+    width: 100%;
+    text-align: center; 
+}
+
+.text-photo-container.left.with-header h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.text-photo-container.left.with-header p {
+    text-align: left;
+    margin-top: 0;
+    width: 80%;
+}
+
+.text-photo-container.left.with-header img {
+    width: 45%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.text-photo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.text-photo-container.left {
+    flex-direction: row; 
+}
+
+.text-photo-container.right {
+    flex-direction: row-reverse; 
+}
+
+.text-photo-container p {
+    width: 45%;
+    text-align: left;
+}
+
+.text-photo-container img {
+    width: 45%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Video gallery styling */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+}
+
+.video-item {
+    background-color: #0c1635;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0c1635;
+    color: #FFC107;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Photo Collage Section */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 35px; /* Spacing between photos */
+    padding: 10px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+
+}
+
+.photo-collage img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-collage img:hover {
+    transform: scale(1.55);
+}
+
+/* Photo Collage Section for Landscape (3:2) Photos */
+.photo-collage-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); /* Adjusted for 3:2 aspect */
+    gap: 45px; /* Spacing between photos */
+    padding: 10px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+}
+
+.photo-collage-2 img {
+    width: 100%;
+    aspect-ratio: 3 / 2; /* Ensuring the images retain 3:2 aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-collage-2 img:hover {
+    transform: scale(1.75);
+}
+
+.banner-container {
+    overflow: visible;
+}
+
+.banner-image {
+    width: calc(100% - 20rem);
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+
