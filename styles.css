@@ -64,6 +64,8 @@ main {
 /* Update text color for sections */
 p {
     font-size: 17px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 h1, h2 {
     color: #FFC107;
